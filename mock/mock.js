@@ -9,10 +9,10 @@ const proxy = {
   'GET /api/users': { users: [1, 2] },
 
   // GET POST 可省略
-  // '/api/users/1': { id: 1 },
-  '/api/users/1': Mock.mock({
-    'list|30': [{ name: '@city', 'value|1-100': 50, 'type|0-2': 1, 'id|+1':0 }]
-  }),
+  '/api/users/1': { id: 1 },
+  // '/api/users/1': Mock.mock({
+  //   'list|30': [{ name: '@city', 'value|1-100': 50, 'type|0-2': 1, 'id|+1':0 }]
+  // }),
 
   // '/api/users/1': (req, res) => {
   //   res.send({ status: 'ok' });
